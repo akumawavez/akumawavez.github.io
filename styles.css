@@ -197,7 +197,7 @@ ul {
 }
 
 
-/* Profile Photo */
+/* Profile Photo (Hero removed, kept for reference if needed or generic) */
 .profile-photo {
   width: 180px;
   height: 180px;
@@ -205,8 +205,78 @@ ul {
   object-fit: cover;
   border: 4px solid var(--primary);
   box-shadow: 0 0 20px var(--primary-glow);
-  margin-bottom: 2rem;
   display: block;
+}
+
+/* About Grid Layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.profile-photo-large {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.section-subtitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle-blue {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.about-text {
+  color: var(--text-formatted);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.about-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: var(--text-muted);
+}
+
+.about-list li {
+  margin-bottom: 0.5rem;
+}
+
+.about-list strong {
+  color: var(--text-main);
+}
+
+.btn-full {
+  width: 100%;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* Responsive Grid */
+@media (max-width: 1024px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-photo-large {
+    max-width: 300px;
+    margin: 0 auto 2rem auto;
+    display: block;
+  }
 }
 
 /* Glass Card */
