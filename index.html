@@ -517,6 +517,28 @@
         nav.classList.toggle('active');
       });
     }
+
+    // Cookie Consent Management
+    function showCookieBanner() {
+      const consent = localStorage.getItem('cookieConsent');
+      if (!consent) {
+        document.getElementById('cookieConsent').style.display = 'block';
+      }
+    }
+
+    function acceptCookies() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      document.getElementById('cookieConsent').style.display = 'none';
+      loadGoogleAnalytics();
+    }
+
+    function declineCookies() {
+      localStorage.setItem('cookieConsent', 'declined');
+      document.getElementById('cookieConsent').style.display = 'none';
+    }
+
+    // Show banner on page load if no consent given
+    window.addEventListener('load', showCookieBanner);
   </script>
 </body>
 
