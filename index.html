@@ -12,10 +12,51 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700;800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Analytics 4 - GDPR Compliant (loads only after consent) -->
+  <script>
+    // Check if user has already consented
+    if (localStorage.getItem('cookieConsent') === 'accepted') {
+      loadGoogleAnalytics();
+    }
+
+    function loadGoogleAnalytics() {
+      // Load GA4 script
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-JT2ESYL8RL';
+      document.head.appendChild(script);
+
+      // Initialize GA4
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-JT2ESYL8RL', {
+        'anonymize_ip': true,
+        'cookie_flags': 'SameSite=None;Secure'
+      });
+    }
+  </script>
 </head>
 
 <body>
   <div class="background-globes"></div>
+
+  <!-- GDPR Cookie Consent Banner -->
+  <div id="cookieConsent" class="cookie-consent" style="display: none;">
+    <div class="cookie-content">
+      <p>
+        <strong>🍪 Cookie Notice</strong><br>
+        This website uses Google Analytics to understand visitor behavior and improve your experience.
+        We anonymize your IP address and do not share data for advertising purposes.
+        <a href="#privacy" class="cookie-link">Learn more</a>
+      </p>
+      <div class="cookie-buttons">
+        <button onclick="acceptCookies()" class="btn primary cookie-btn">Accept</button>
+        <button onclick="declineCookies()" class="btn ghost cookie-btn">Decline</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Navigation -->
   <header class="site-header">
@@ -240,10 +281,34 @@
                 </ul>
               </div>
             </div>
-          </div>
 
+            <!-- Job 5 -->
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Ship Performance Analytics Manager</h3>
+                  <span class="company">Oceanix — Kochi, India</span>
+                  <span class="date">Dec 2014 – Jun 2015</span>
+                </div>
+                <div class="timeline-body">
+                  <ul>
+                    <li>
+                      <strong>5% average savings</strong> (thousands of dollars) by providing fuel recommendations for
+                      route-planning using regression-based Machine Learning models in R/Excel.
+                    </li>
+                    <li>
+                      Performed data-driven ROI computation for major Retrofits/Repairs or Installations of Energy
+                      Saving Devices on ships.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
         </div>
-      </div>
     </section>
 
     <!-- Projects Section -->
