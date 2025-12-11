@@ -1,255 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ajai Kurian Mathew | Data Scientist & Engineer</title>
+  <title>Ajai Kurian Mathew | Data Scientist & AI Engineer</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700;800&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <!-- Top Navigation -->
+  <div class="background-globes"></div>
+
+  <!-- Navigation -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#hero" class="logo">Ajai Kurian Mathew</a>
+      <a href="#hero" class="logo">Ajai K. Mathew</a>
       <nav class="nav-links">
         <a href="#about">About</a>
-        <a href="#cv">CV</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
-        <a href="#blog">Blog</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
+      <button class="mobile-toggle" aria-label="Toggle Navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
     </div>
   </header>
 
   <main>
-    <!-- Hero / Intro -->
+    <!-- Hero Section -->
     <section id="hero" class="hero">
       <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>Ajai Kurian Mathew</h1>
-          <h2>Data Scientist | Data & AI Engineer</h2>
-          <p>
-            I build data and AI solutions that go from prototype to production,
-            helping teams turn complex data into measurable business impact.
+        <div class="hero-content">
+          <span class="hero-label">Portfolio</span>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Ajai Kurian Mathew</span>
+          </h1>
+          <p class="hero-subtitle">
+            Senior Data Scientist & AI Engineer specializing in building scalable
+            machine learning solutions, RAG applications, and data-driven
+            products.
           </p>
           <div class="hero-actions">
-            <a href="#cv" class="btn primary">View CV</a>
-            <a href="#projects" class="btn ghost">View Projects</a>
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#experience" class="btn secondary">My Journey</a>
           </div>
         </div>
-        <div class="hero-side">
-          <!-- Optional: replace with your photo -->
-          <div class="hero-card">
-            <h3>Quick Snapshot</h3>
-            <ul>
-              <li>4+ years in Data Science</li>
-              <li>~10 years in Data & Engineering</li>
-              <li>Specializing in ML, MLOps & analytics</li>
+        <div class="hero-visual">
+          <img src="LinkedInProfilePic.png" alt="Ajai Kurian Mathew" class="profile-photo" />
+          <div class="glass-card profile-summary">
+            <h3>Expertise</h3>
+            <ul class="skill-tags">
+              <li>Python & SQL</li>
+              <li>Generative AI & RAG</li>
+              <li>MLOps & CI/CD</li>
+              <li>Data Engineering</li>
+              <li>Mendix ML Kit</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About -->
+    <!-- About Section -->
     <section id="about" class="section">
       <div class="container">
-        <h2>About</h2>
-        <p>
-          I'm a data scientist and engineer with experience designing, prototyping,
-          and scaling AI-driven solutions in close collaboration with both technical
-          and business teams. I enjoy working end-to-end: from understanding the
-          problem and shaping the data, to building models and deploying them into
-          production environments.
-        </p>
-        <p>
-          My interests include modern data platforms, ML systems, and applying data
-          and AI to solve meaningful business problems across domains such as
-          <em>YOUR_DOMAINS_HERE (e.g., finance, SaaS, e-commerce)</em>.
-        </p>
-      </div>
-    </section>
+        <h2 class="section-title">About Me</h2>
+        <div class="glass-card">
+          <h3 style="color: var(--primary); margin-bottom: 0.5rem;">Professional Summary</h3>
+          <p style="color: var(--text-formatted); margin-bottom: 1.5rem;">
+            Senior Data Scientist and AI Engineer with over 4 years of specialized experience in Machine Learning,
+            MLOps, and Analytics, backed by a decade in Data and Engineering roles. Proven track record of designing and
+            deploying scalable AI solutions that drive measurable business value, from 75% reductions in retrieval times
+            to substantial cuts in manual operational efforts. Adept at bridging the gap between technical complexity
+            and business strategy.
+          </p>
 
-    <!-- CV / Highlights -->
-    <section id="cv" class="section section-alt">
-      <div class="container">
-        <h2>CV Highlights</h2>
-        <p>
-          Below are selected highlights. For a full CV, you can download it here:
-          <a href="Ajai Resume.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
-        </p>
-        <div class="grid two-col">
-          <div>
-            <h3>Core Experience</h3>
-            <ul>
-              <li>Senior / Lead-level data science and engineering roles</li>
-              <li>End-to-end ML projects from discovery to production</li>
-              <li>Partnering with product, engineering, and leadership</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Selected Skills</h3>
-            <ul class="pill-list">
-              <li>Python</li>
-              <li>SQL</li>
-              <li>Pandas / PySpark</li>
-              <li>ML (sklearn, XGBoost, etc.)</li>
-              <li>MLOps (YOUR_TOOLS)</li>
-              <li>Cloud (AWS / Azure / GCP)</li>
-            </ul>
-          </div>
+          <h3 style="color: var(--primary); margin-bottom: 0.5rem;">Background and Expertise</h3>
+          <p style="color: var(--text-formatted);">
+            My journey began in Ocean Engineering and Naval Architecture, where I developed a strong foundation in
+            simulation, mathematical modeling, and engineering systems. Successfully transitioning into Data Science, I
+            now leverage this rigorous analytical background to build robust ML pipelines and RAG applications.
+            Expertise spans across Python, SQL, Cloud Platforms (Azure/AWS), and modern AI frameworks, with a focus on
+            delivering end-to-end solutions from prototype to production.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- Experience / Research-style section -->
+    <!-- Experience Section -->
     <section id="experience" class="section">
       <div class="container">
-        <h2>Experience & Focus Areas</h2>
-        <div class="grid two-col">
-          <div>
-            <h3>Applied Data Science</h3>
-            <p>
-              Designing and deploying models for tasks such as forecasting, ranking,
-              classification, and optimization. Emphasis on clarity of objectives,
-              clean evaluation, and collaboration with stakeholders.
-            </p>
-            <ul>
-              <li>Problem framing with product and business teams</li>
-              <li>Robust experimentation and A/B testing</li>
-              <li>Explaining model behaviour to non-technical stakeholders</li>
-            </ul>
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+
+          <!-- Job 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Data Scientist (Senior Consultant)</h3>
+                <span class="company">CLEVR NL B.V — Amersfoort, Netherlands</span>
+                <span class="date">Apr 2023 – Present</span>
+              </div>
+              <div class="timeline-body">
+                <ul>
+                  <li>
+                    <strong>Semantic Search RAG:</strong> Achieved <strong>75% reduction in article retrieval
+                      time</strong> and 15% increase in first-contact resolution rates by designing a RAG
+                    Proof-of-Concept for Telenet, indexing 10,000+ support articles.
+                  </li>
+                  <li>
+                    <strong>Automated Audit Logs:</strong> 85% cut in manual merge effort for Kongsberg Maritime by
+                    building a Streamlit-based PLM Classification Merge Tool.
+                  </li>
+                  <li>
+                    <strong>Data Value Analysis (DVA):</strong> Projected 30% reduction in unplanned downtime for
+                    Tronrud by integrating heterogeneous IoT and enterprise data sources.
+                  </li>
+                  <li>
+                    <strong>Innovation:</strong> Spearheaded the creation of CLEVR’s Data Science Practice and led the
+                    development of an Agentic AI demo application as Product Owner.
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div>
-            <h3>Data & ML Engineering</h3>
-            <p>
-              Building reliable data and ML pipelines that can scale. Focus on
-              reproducibility, observability, and maintainability.
-            </p>
-            <ul>
-              <li>Data modeling and ETL / ELT pipelines</li>
-              <li>Feature pipelines & model serving</li>
-              <li>Monitoring and lifecycle management</li>
-            </ul>
+
+          <!-- Job 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Senior Data Scientist</h3>
+                <span class="company">BDI Systems Technologies (Ravity Software) — Bengaluru, India</span>
+                <span class="date">Jun 2021 – Mar 2023</span>
+              </div>
+              <div class="timeline-body">
+                <ul>
+                  <li>
+                    <strong>Vehicle Failure Prediction:</strong> Led an ML PoC achieving a <strong>15% boost in
+                      early-failure detection accuracy</strong> using classification models and telematics data.
+                  </li>
+                  <li>
+                    <strong>Driver Scoring Pipeline:</strong> Designed a pipeline projecting 20% reduction in risky
+                    driving events, processing 5000+ monthly trips.
+                  </li>
+                  <li>
+                    <strong>Founding Role:</strong> Played a key role in measuring product direction and delivering
+                    first-gen ML capabilities for a vertical SaaS platform in the connected car space.
+                  </li>
+                  <li>
+                    <strong>Toyota Connected Europe (Contract):</strong> Deployed trip segment classification models to
+                    production using BDB.AI platform to compare hybrid vs electric vehicle emissions.
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
+
+          <!-- Job 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Riser Engineer (Data Analytics)</h3>
+                <span class="company">Kongsberg Maritime, Inc. — Houston, USA</span>
+                <span class="date">Dec 2018 – May 2021</span>
+              </div>
+              <div class="timeline-body">
+                <ul>
+                  <li>
+                    Developed a MATLAB-based automation framework to generate Latex reports, streamlining delivery and
+                    enabling faster turnaround.
+                  </li>
+                  <li>
+                    Conducted time-series anomaly detection on offshore pipeline strain sensor data using statistical
+                    techniques and domain knowledge.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job 4 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>Project Engineer</h3>
+                <span class="company">RE Vision Consulting LLC — Sacramento, USA</span>
+                <span class="date">Apr 2018 – Dec 2018</span>
+              </div>
+              <div class="timeline-body">
+                <ul>
+                  <li>
+                    <strong>80% reduction</strong> in simulation set-up time by developing a MATLAB toolkit to automate
+                    geometric model creation.
+                  </li>
+                  <li>
+                    Developed Python scripts using DroneKit to interface with autonomous sailing drones for real-time
+                    control.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- Projects -->
+    <!-- Projects Section -->
     <section id="projects" class="section section-alt">
       <div class="container">
-        <h2>Selected Projects</h2>
-        <p>
-          A few examples of projects that demonstrate my approach to data and AI.
-          Replace these with your own projects and links to GitHub or write-ups.
-        </p>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
 
-        <div class="cards">
-          <article class="card">
-            <h3>Project 1 – TITLE</h3>
-            <p>
-              Short description: what problem you solved, who it helped, and
-              the tech stack (e.g., Python, Spark, MLflow, Databricks).
-            </p>
-            <ul class="tag-list">
-              <li>Python</li>
-              <li>ML</li>
-              <li>Databricks</li>
-            </ul>
-            <a href="YOUR_GITHUB_OR_ARTICLE_LINK" target="_blank" rel="noopener">
-              View details →
-            </a>
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-content">
+              <h3>SmartSpendGrocery</h3>
+              <p>
+                An intelligent application to optimize grocery spending.
+                (Parsing and data analysis implementation).
+              </p>
+              <div class="tags">
+                <span>Python</span>
+                <span>Data Analysis</span>
+              </div>
+              <a href="https://github.com/akumawavez/SmartSpendGrocery" target="_blank" class="project-link">
+                View Source <span class="arrow">→</span>
+              </a>
+            </div>
           </article>
 
-          <article class="card">
-            <h3>Project 2 – TITLE</h3>
-            <p>
-              Another concise project description highlighting your role and
-              measurable impact (e.g., latency reduction, revenue lift, etc.).
-            </p>
-            <ul class="tag-list">
-              <li>PySpark</li>
-              <li>Data Engineering</li>
-            </ul>
-            <a href="YOUR_GITHUB_OR_ARTICLE_LINK" target="_blank" rel="noopener">
-              View details →
-            </a>
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-content">
+              <h3>AI Nutrition Label Explainer</h3>
+              <p>
+                Part of LLM Zoomcamp 2025. An AI-powered tool to explain nutrition labels to users, helping them make
+                healthier choices.
+              </p>
+              <div class="tags">
+                <span>LLM</span>
+                <span>RAG</span>
+                <span>Python</span>
+              </div>
+              <a href="https://github.com/akumawavez/LLMzoomcamp2025/tree/main/cohorts/2025/project/AI_NutritionLabel_Explainer"
+                target="_blank" class="project-link">
+                View Source <span class="arrow">→</span>
+              </a>
+            </div>
           </article>
 
-          <article class="card">
-            <h3>Project 3 – TITLE</h3>
-            <p>
-              Optionally use this to showcase something closer to research, a
-              case study, or a personal / learning project.
-            </p>
-            <ul class="tag-list">
-              <li>Experimentation</li>
-              <li>Analytics</li>
-            </ul>
-            <a href="YOUR_GITHUB_OR_ARTICLE_LINK" target="_blank" rel="noopener">
-              View details →
-            </a>
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-content">
+              <h3>Basic RAG Housing Assistant</h3>
+              <p>
+                A Retrieval-Augmented Generation assistant to help users find housing information efficiently.
+              </p>
+              <div class="tags">
+                <span>RAG</span>
+                <span>Data Ingestion</span>
+                <span>LLM</span>
+              </div>
+              <a href="https://github.com/akumawavez/LLMzoomcamp2025/tree/main/cohorts/2025/project/basicRAGHousingAssistant"
+                target="_blank" class="project-link">
+                View Source <span class="arrow">→</span>
+              </a>
+            </div>
           </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="project-content">
+              <h3>LLM Project: Attempt 2</h3>
+              <p>
+                Advanced iteration of LLM project work for the 2025 cohort. Exploring new techniques in model prompting
+                and context management.
+              </p>
+              <div class="tags">
+                <span>Generative AI</span>
+                <span>Experimentation</span>
+              </div>
+              <a href="https://github.com/akumawavez/LLMzoomcamp2025/tree/main/cohorts/2025/project/attempt2"
+                target="_blank" class="project-link">
+                View Source <span class="arrow">→</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card">
+            <div class="project-content">
+              <h3>Rossmann Forecasting</h3>
+              <p>
+                Time-series forecasting project for Rossmann store sales. Implements various predictive models to
+                estimate future revenue.
+              </p>
+              <div class="tags">
+                <span>Forecasting</span>
+                <span>Time Series</span>
+                <span>Machine Learning</span>
+              </div>
+              <a href="https://github.com/akumawavez/rossmann-forecasting" target="_blank" class="project-link">
+                View Source <span class="arrow">→</span>
+              </a>
+            </div>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <!-- Blog -->
-    <section id="blog" class="section">
+    <!-- Education & Skills -->
+    <section id="education" class="section">
       <div class="container">
-        <h2>Blog</h2>
-        <p>
-          Use this section to link to posts about data science, engineering, or
-          your journey. If you don’t have posts yet, you can hide this section
-          or mark it as “coming soon”.
-        </p>
-        <ul class="link-list">
-          <li>
-            <a href="YOUR_BLOG_POST_LINK_1" target="_blank" rel="noopener">
-              Post Title 1 – one-line description of the topic
-            </a>
-          </li>
-          <li>
-            <a href="YOUR_BLOG_POST_LINK_2" target="_blank" rel="noopener">
-              Post Title 2 – one-line description of the topic
-            </a>
-          </li>
-        </ul>
+        <div class="grid-layout">
+
+          <!-- Education Column -->
+          <div class="col">
+            <h2 class="section-title-small">Education</h2>
+            <div class="education-list">
+              <div class="edu-item">
+                <h4>M.S. Data Science/Analytics</h4>
+                <span class="institution">Georgia Tech, USA</span>
+                <span class="year">2020 - 2023</span>
+              </div>
+              <div class="edu-item">
+                <h4>M.S. Financial Engineering</h4>
+                <span class="institution">World Quant University</span>
+                <span class="year">2021 - 2024</span>
+              </div>
+              <div class="edu-item">
+                <h4>M.S. Ocean Engineering</h4>
+                <span class="institution">Virginia Tech, USA</span>
+                <span class="year">2015 - 2018</span>
+              </div>
+              <div class="edu-item">
+                <h4>B.Tech. Naval Architecture</h4>
+                <span class="institution">IIT Madras, India</span>
+                <span class="year">2007 - 2011</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills Column -->
+          <div class="col">
+            <h2 class="section-title-small">Tools & Skills</h2>
+            <div class="skills-wrapper">
+              <h3>Languages & Libraries</h3>
+              <div class="tag-cloud">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>Scikit-learn</span>
+                <span>PyTorch</span>
+                <span>FastAPI</span>
+              </div>
+
+              <h3>DevOps & Cloud</h3>
+              <div class="tag-cloud">
+                <span>Docker</span>
+                <span>Git</span>
+                <span>CI/CD</span>
+                <span>Mendix</span>
+              </div>
+
+              <h3>Certifications & Courses</h3>
+              <ul class="cert-list">
+                <li>GenAI with Large Language Models (Coursera)</li>
+                <li>Machine Learning in Production (Coursera)</li>
+                <li>RAG with LangChain (Datacamp)</li>
+                <li>Intro to AI Agents (Datacamp)</li>
+                <li>Product Owner Fundamentals (Udemy)</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title-small">Achievements & Interests</h2>
+        <div class="achievements-box">
+          <ul>
+            <li><strong>Toastmasters:</strong> Vice-President (Education) at U-Speak Toastmasters Club (2025-26).</li>
+            <li><strong>Test Scores:</strong> IELTS (8), TOEFL (110), GRE (327/340).</li>
+            <li><strong>Hobbies:</strong> Swimming, Playing Guitar, Yoga.</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section section-alt">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>
-          Feel free to reach out for collaborations, roles in data & AI, or
-          just to chat.
+    <section id="contact" class="section contact-section">
+      <div class="container text-center">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="contact-text">
+          I'm always open to discussing new opportunities in AI, Data Science, and Engineering.
         </p>
-        <ul class="contact-list">
-          <li>Email: <a href="mailto:ajaikm@hotmail.com">ajaikm@hotmail.com</a></li>
-          <li>Location: Amersfoort, Netherlands (open to remote / relocation)</li>
-          <li>
-            <a href="https://www.linkedin.com/in/ajaikm/" target="_blank" rel="noopener">LinkedIn</a> ·
-            <a href="https://github.com/akumawavez/" target="_blank" rel="noopener">GitHub</a>
-          </li>
-        </ul>
+        <div class="contact-links">
+          <a href="mailto:ajaikm@hotmail.com" class="btn primary">ajaikm@hotmail.com</a>
+          <a href="https://www.linkedin.com/in/ajaikm/" target="_blank" class="btn ghost">LinkedIn</a>
+          <a href="https://github.com/akumawavez/" target="_blank" class="btn ghost">GitHub</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Ajai Kurian Mathew. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Ajai Kurian Mathew. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
-    // Set current year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile Toggle logic
+    const toggle = document.querySelector('.mobile-toggle');
+    const nav = document.querySelector('.nav-links');
+
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+      });
+    }
   </script>
 </body>
+
 </html>
