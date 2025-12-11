@@ -439,7 +439,7 @@ ul {
 
 .timeline-body li {
   margin-bottom: 0.5rem;
-  color: var(--text-muted);
+  color: var(--text-formatted);
   font-size: 0.95rem;
 }
 
